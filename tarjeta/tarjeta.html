@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <main class="wrapper">
+        <!-- Tarjeta -->
+        <div class="card">
+            <!-- Frente de la Tarjeta -->
+            <div class="card-front">
+                <img src="./images/bg-card-front.png" alt="Frente de la tarjeta">
+                <div class="card-front__data">
+                    <img src="./images/card-logo.svg" alt="">
+                    <div>
+                        <p class="card-number" id="card-number">0000 0000 0000 0000</p>
+                        <div class="card-name-date">
+                            <p class="card-name" id="card-name">Jane Appleseed</p>
+                            <p class="card-date">
+                                <span id="card-month">00</span>/<span id="card-year">00</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dorso de la Tarjeta -->
+            <div class="card-back">
+                <img src="./images/bg-card-back.png" alt="Dorso de la tarjeta">
+                <div class="card-back__data">
+                    <p class="card-cvc" id="card-cvc">000</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="form-wrapper">
+            <form class="form" id="form">
+                <!-- Campo de Correo Electrónico -->
+                <div class="form-group">
+                    <label for="input-name" class="label">Correo Electronico</label>
+                    <input type="text" class="input" id="input-name" placeholder="por ejemplo, barbesho@" required>
+                </div>
+
+                <!-- Campo de Titular de la Tarjeta -->
+                <div class="form-group">
+                    <label for="input-name" class="label">NOMBRE DEL TITULAR DE LA TARJETA</label>
+                    <input type="text" class="input" id="input-name" placeholder="por ejemplo, Jane Appleseed" required>
+                </div>
+
+                <!-- Campo de Número de Tarjeta -->
+                <div class="form-group">
+                    <label for="input-number" class="label">NÚMERO DE TARJETA</label>
+                    <input type="text" class="input" id="input-number" placeholder="por ejemplo, 1234 5678 9123 0000" required>
+                </div>
+
+                <!-- Campos de Fecha de Expiración y CVC -->
+                <div class="form-group double">
+                    <div class="rows">
+                        <label for="input-month" class="label">FECHA DE EXP. (MM/AA)</label>
+                        <div class="columns">
+                            <input type="text" class="input" id="input-month" placeholder="MM" maxlength="2" required>
+                            <input type="text" class="input" id="input-year" placeholder="YY" maxlength="2" required>
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <label for="input-cvc" class="label">CVC</label>
+                        <input type="text" class="input" id="input-cvc" placeholder="por ejemplo. 123" maxlength="3" required>
+                    </div>
+                </div>
+
+                <!-- Botón de Confirmar -->
+                <div class="form-group">
+                    <button class="button" type="submit">Confirmar</button>
+                </div>
+            </form>
+
+            <!-- Mensaje de Agradecimiento -->
+            <div class="thank-you disabled" id="thank-you">
+                <img src="./images/icon-complete.svg" alt="Ícono de completado">
+                <p class="thank-you-title">Gracias!</p>
+                <p class="thank-you-text">Hemos añadido los datos de tu tarjeta</p>
+                <p class="thank-you-text">Te hemos enviado a tu correo una boleta de pago</p>
+                <a class="badge badge-warning" href="../index.html">Regresar</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Librería Cleave.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.0.2/cleave.min.js"
+        integrity="sha512-SvgzybymTn9KvnNGu0HxXiGoNeOi0TTK7viiG0EGn2Qbeu/NFi3JdWrJs2JHiGA1Lph+dxiDv5F9gDlcgBzjfA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Script Personalizado -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

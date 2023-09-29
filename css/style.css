@@ -1,0 +1,192 @@
+/* --------------------- *\
+        GENERALES
+\* --------------------- */
+
+.text-platzi {
+    color: #97c93e !important;
+}
+
+.btn-platzi {
+    background-color: #97c93c;
+}
+.btn-platzi:hover {
+    background-color: #82ad36;
+}
+
+/* --------------------- *\
+        ENCABEZADO
+\* --------------------- */
+
+.platzi-logo {
+    width: 19px;
+    height: 19px;
+    transform: rotate(45deg);
+    align-self: center;
+}
+
+    .logo-top {
+        width: 80%;
+        height: 60%;
+        
+        border-radius: 4px 4px 0 0;
+        border: 3.5px solid #87c739;
+        border-bottom: none;
+        box-sizing: border-box;
+
+        position: relative;
+        top: 1px;
+    }
+    
+    .logo-bottom {
+        width: 100%;
+        height: 40%;
+
+        border-radius: 0 0 4px 4px;
+        border: 3.5px solid #87c739;
+        border-top: none;
+        box-sizing: border-box;
+    }
+
+/* --------------------- *\
+           HERO
+\* --------------------- */
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+#Inicio p {
+    flex-basis: 20rem;
+    flex-grow: 1;
+}
+#Inicio img {
+    height: 70vh;
+    object-fit: cover;
+    
+}
+
+
+
+
+#Tatuajes {
+    background-color: rgba(34, 28, 28, 0.959); 
+   
+}
+
+#Tatuajes small {
+    color: rgb(241, 235, 235);
+}
+#Tatuajes h2{
+    color: rgb(241, 235, 235);
+}
+
+#Tatuajes img {
+    margin-top: auto;
+    cursor: pointer;
+    transition: 3s;
+}
+#Tatuajes img:hover {
+    transform: scale(1.5);
+    transition: 3s;
+}
+
+#Cortes {
+    background-color: rgba(34, 28, 28, 0.959);
+    
+}
+#Cortes img {
+    margin-top: auto;
+    cursor: pointer;
+    transition: 3s;
+}
+#Hubicacion .mapa {
+    margin-top: auto;
+    cursor: pointer;
+}
+#Cortes img:hover {
+    transform: scale(1.5);
+    transition: 3s;
+}
+#Cortes small{
+    color: rgb(241, 235, 235);
+}
+#Cortes h2{
+    color: rgb(241, 235, 235);
+}
+
+.card-body {
+    background-color: rgba(34, 28, 28, 0.959);
+}
+
+.card-body h5 {
+    color: rgb(241, 235, 235);
+}
+
+#Comentarios h3{
+    color: rgb(241, 235, 235);
+}
+
+#Comentarios p{
+    color: rgb(241, 235, 235);
+}
+
+
+
+#Comentarios {
+    background-color: rgba(34, 28, 28, 0.959);
+}
+
+.capa-hero {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.capa-hero .container,
+.container .row {
+    height: 100%;
+}
+
+/* --------------------- *\
+      LUGAR Y FECHA
+\* --------------------- */
+
+#Hubicacion {
+    color: white;
+    background-color: #343a40;
+}
+
+#Hubicacion div {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* --------------------- *\
+      PIE DE PAGINA
+\* --------------------- */
+
+
+
+#footer {
+    background-color: #343a40;
+}
+
+#footer a {
+    color: rgba(238, 223, 223, 0.904);
+}
+
+#footer button{
+    color: #1b1d1f;
+   
+}
+
+.navbar .navbar-brand {
+    display: flex;
+}
+
+
